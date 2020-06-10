@@ -59,9 +59,10 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 /*--------------------------------------------------------------
 # Main slider
 --------------------------------------------------------------*/
+.slider-container{position: relative;}
 .slider-container .btn{
     position: absolute;
-    top: 95%;
+    top: 80%;
     left: 50%;
     z-index: 100;
     transform: translate(-50%, -50%);
@@ -324,10 +325,10 @@ section {
 
 /**/
 .slider_circle_exp .cont{
-  border: 1px solid #d4d4d4;
+    border-top: 1px solid #d4d4d4;
     background: #f6f6f6;
     height: 60px;
-    position: absolute;
+    position: relative;
 }
 .slider_circle_exp .cont h4 a{
   font-size: 18px;
@@ -594,8 +595,6 @@ section {
     left: 0%;
     margin-left: -20%;
   }
-  .slider-container .btn {
-    top: 90%;}
     .section-title {
     width: 95%;}
     .social-links {
@@ -612,16 +611,31 @@ section {
     padding: 14px 0;}
     .slider_circle_exp .prev1, .slider_circle_exp .next1{
     width: 90px; }
-    .slider_circle_exp .prev2, .slider_circle_exp .next2,
     .slider_circle_exp .prev3, .slider_circle_exp .next3{
       display: none;}
     .slider_circle_exp .prev1 {
-    margin-left: -60%;}
+    margin-left: -30%;}
     .slider_circle_exp .next1 {
-    margin-left: 26%;}
-    .slider_circle_exp .next_button, .slider_circle_exp .prev_button{display: none;}
+    margin-left: 13%;}
+    .slider_circle_exp .prev2{
+      width: 90px;
+    } 
+    .slider_circle_exp .next2{
+      width: 90px;
+    }
+    /*.slider_circle_exp .next_button, .slider_circle_exp .prev_button{display: none;}*/
     .slider_circle_exp .cont h4 a{font-size: 12px;}
     .slider_circle_exp .cont p {
     font-size: 8px;}
 
+}
+
+@media(max-width: 380px){
+  .slider_circle_exp .prev_button {
+    transform: translate(-50%);
+    width: 120px;}
+   .slider_circle_exp .prev1 {
+    margin-left: -50%;}
+    .slider_circle_exp .prev2 {
+    margin-left: -65%;}
 }
